@@ -31,9 +31,9 @@ export default function HeroSlider() {
     setCurrentSlide((prev) => (prev + 1) % slides.length)
   }
 
-  const prevSlide = () => {
-    setCurrentSlide((prev) => (prev - 1 + slides.length) % slides.length)
-  }
+  // const prevSlide = () => {
+  //   setCurrentSlide((prev) => (prev - 1 + slides.length) % slides.length)
+  // }
 
   const goToSlide = (index: number) => {
     setCurrentSlide(index)

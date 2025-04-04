@@ -27,8 +27,7 @@ export default function OurStory() {
           </motion.h2>
           <motion.div variants={fadeIn} className="w-24 h-0.5 bg-pink-300 mx-auto mb-6" />
           <motion.p variants={fadeIn} className="text-gray-600">
-            Every love story is beautiful, but ours is our favorite. Here's how our journey began and led us to this
-            special day.
+            {`Every love story is beautiful, but ours is our favorite. Here's how our journey began and led us to this special day.`}
           </motion.p>
         </motion.div>
 
@@ -76,8 +75,7 @@ export default function OurStory() {
                   </svg>
                 </div>
                 <p className="text-gray-600 leading-relaxed">
-                  We first met at a mutual friend's birthday party. What started as a casual conversation turned into
-                  hours of talking and laughing.
+                  {`We first met at a mutual friend's birthday party. What started as a casual conversation turned into hours of talking and laughing.`}
                 </p>
               </motion.div>
             </div>
@@ -126,8 +124,7 @@ export default function OurStory() {
                   </svg>
                 </div>
                 <p className="text-gray-600 leading-relaxed">
-                  After months of friendship, we finally went on our first official date to a cozy Italian restaurant
-                  followed by a walk under the stars.
+                  {`After months of friendship, we finally went on our first official date to a cozy Italian restaurant followed by a walk under the stars.`}
                 </p>
               </motion.div>
             </div>
@@ -171,8 +168,7 @@ export default function OurStory() {
                   </svg>
                 </div>
                 <p className="text-gray-600 leading-relaxed">
-                  During a weekend getaway to the mountains, surrounded by breathtaking views, the perfect moment
-                  arrived for a heartfelt proposal.
+                  {`During a weekend getaway to the mountains, surrounded by breathtaking views, the perfect moment arrived for a heartfelt proposal.`}
                 </p>
               </motion.div>
             </div>
@@ -182,4 +178,3 @@ export default function OurStory() {
     </section>
   )
 }
-
