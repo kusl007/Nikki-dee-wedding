@@ -63,12 +63,12 @@ export default function Navbar() {
             ABOUT
           </Link>
           <Link
-            href="/services"
+            href="/family"
             className={`${
               scrolled ? "text-gray-800" : "text-white"
             } hover:opacity-80 transition-opacity text-sm tracking-widest`}
           >
-            SERVICES
+            FAMILY
           </Link>
           <Link
             href="/portfolio"
@@ -125,11 +125,11 @@ export default function Navbar() {
                 ABOUT
               </Link>
               <Link
-                href="/services"
+                href="/family"
                 className="text-gray-800 hover:text-pink-400 transition-colors text-sm tracking-widest"
                 onClick={() => setIsOpen(false)}
               >
-                SERVICES
+                FAMILY
               </Link>
               <Link
                 href="/portfolio"
