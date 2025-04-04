@@ -1,6 +1,7 @@
 import type React from "react"
 import "@/app/globals.css"
 import { Playfair_Display, Cormorant_Garamond } from "next/font/google"
+import Preloader from "@/components/preloader"
 
 const playfair = Playfair_Display({
   subsets: ["latin"],
@@ -14,9 +15,8 @@ const cormorant = Cormorant_Garamond({
 })
 
 export const metadata = {
-  title: "Our Wedding",
+  title: "Niki & Rounak's Wedding",
   description: "Join us to celebrate our special day",
-    generator: 'v0.dev'
 }
 
 export default function RootLayout({
@@ -27,12 +27,10 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={`min-h-screen bg-background font-sans antialiased ${playfair.variable} ${cormorant.variable}`}>
+        <Preloader />
         {children}
       </body>
     </html>
   )
 }
 
-
-
-import './globals.css'
