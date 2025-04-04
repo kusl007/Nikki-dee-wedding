@@ -4,35 +4,42 @@ import { useState } from "react"
 import { motion } from "framer-motion"
 import Image from "next/image"
 
-// Sample data - replace with actual wedding attendees
-const brideFamily = [
+interface FamilyMember {
+  id: number
+  name: string
+  relation: string
+  photo: string
+  description: string
+}
+
+const brideFamily: FamilyMember[] = [
   {
     id: 1,
     name: "Sarah Johnson",
     relation: "Mother of the Bride",
     photo: "/images/family/bride-mother.jpg",
-    description: "Sarah has been the bride's rock throughout her life, offering wisdom and unconditional love.",
+    description: "Sarah has been the bride&apos;s rock throughout her life, offering wisdom and unconditional love.",
   },
   {
     id: 2,
     name: "Robert Johnson",
     relation: "Father of the Bride",
     photo: "/images/family/bride-father.jpg",
-    description: "Robert couldn't be prouder to walk his daughter down the aisle on her special day.",
+    description: "Robert couldn&apos;t be prouder to walk his daughter down the aisle on her special day.",
   },
   {
     id: 3,
     name: "Emily Wilson",
     relation: "Sister of the Bride",
     photo: "/images/family/bride-sister.jpg",
-    description: "As maid of honor, Emily has been by her sister's side through every wedding planning moment.",
+    description: "As maid of honor, Emily has been by her sister&apos;s side through every wedding planning moment.",
   },
   {
     id: 4,
     name: "Michael Johnson",
     relation: "Brother of the Bride",
     photo: "/images/family/bride-brother.jpg",
-    description: "Michael shares a special bond with his sister and couldn't be happier for her new journey.",
+    description: "Michael shares a special bond with his sister and couldn&apos;t be happier for her new journey.",
   },
   {
     id: 5,
@@ -46,11 +53,11 @@ const brideFamily = [
     name: "David & Martha Wilson",
     relation: "Grandparents",
     photo: "/images/family/bride-grandparents.jpg",
-    description: "With 55 years of marriage, they've been an inspiration for the couple's relationship.",
+    description: "With 55 years of marriage, they&apos;ve been an inspiration for the couple&apos;s relationship.",
   },
 ]
 
-const groomFamily = [
+const groomFamily: FamilyMember[] = [
   {
     id: 1,
     name: "Patricia Smith",
@@ -96,7 +103,7 @@ const groomFamily = [
 ]
 
 export default function FamilyMembers() {
-  const [activeTab, setActiveTab] = useState("bride") // 'bride' or 'groom'
+  const [activeTab, setActiveTab] = useState<"bride" | "groom">("bride")
 
   const fadeIn = {
     hidden: { opacity: 0, y: 20 },
@@ -131,12 +138,12 @@ export default function FamilyMembers() {
           </motion.h2>
           <motion.div variants={fadeIn} className="w-24 h-0.5 bg-pink-300 mx-auto mb-6" />
           <motion.p variants={fadeIn} className="text-gray-600 max-w-2xl mx-auto">
-            We're blessed to have such wonderful family and friends who joined us to celebrate our love. Here are the
-            special people who attended our wedding.
+            We&apos;re blessed to have such wonderful family and friends who joined us to celebrate our love. Here are
+            the special people who attended our wedding.
           </motion.p>
         </motion.div>
 
-        {/* Custom tabs using only Tailwind CSS */}
+        {/* Custom tabs */}
         <div className="flex space-x-1 rounded-xl bg-pink-50 p-1 max-w-md mx-auto mb-12">
           <button
             onClick={() => setActiveTab("bride")}
@@ -146,7 +153,7 @@ export default function FamilyMembers() {
                 : "text-gray-600 hover:bg-white/[0.12] hover:text-pink-500"
             }`}
           >
-            Bride's Side
+            Bride&apos;s Side
           </button>
           <button
             onClick={() => setActiveTab("groom")}
@@ -156,7 +163,7 @@ export default function FamilyMembers() {
                 : "text-gray-600 hover:bg-white/[0.12] hover:text-pink-500"
             }`}
           >
-            Groom's Side
+            Groom&apos;s Side
           </button>
         </div>
 
@@ -195,7 +202,7 @@ export default function FamilyMembers() {
   )
 }
 
-function FamilyMemberCard({ person }: { person: any }) {
+function FamilyMemberCard({ person }: { person: FamilyMember }) {
   return (
     <motion.div
       variants={{
@@ -220,4 +227,3 @@ function FamilyMemberCard({ person }: { person: any }) {
     </motion.div>
   )
 }
-
