@@ -24,19 +24,17 @@ export default function WeddingDetails() {
         >
           <div className="flex flex-col md:flex-row">
             <motion.div variants={fadeIn} className="md:w-1/2 mb-10 md:mb-0 md:pr-12">
-              <h2 className="text-3xl font-serif mb-6">KRISTY & KEN</h2>
+              <h2 className="text-3xl font-serif mb-6">NIKITA & ABINASH</h2>
               <p className="text-gray-600 mb-4 leading-relaxed">
-                When Kristy & Ken first met, they knew they had found something special. Their journey began with a
+                When Nikita and Abinash  first met, they knew they had found something special. Their journey began with a
                 chance encounter that blossomed into a beautiful relationship filled with love, laughter, and
                 unforgettable moments.
               </p>
               <p className="text-gray-600 mb-4 leading-relaxed">
-                After five years of dating, Ken proposed during a romantic weekend getaway to the mountains. The
-                breathtaking views provided the perfect backdrop for this milestone in their love story.
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas aut iure sunt ex totam veritatis ratione perferendis accusantium illum dolorum.
               </p>
               <p className="text-gray-600 mb-8 leading-relaxed">
-                Now they're ready to take the next step and begin their forever together. They would be honored to have
-                you join them in celebrating this special occasion.
+               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid aperiam temporibus quos corrupti iure praesentium qui iusto consectetur sequi illo!
               </p>
 
               <div className="inline-block border border-gray-200 px-8 py-3 text-sm uppercase tracking-widest hover:bg-gray-100 transition-colors cursor-pointer">
